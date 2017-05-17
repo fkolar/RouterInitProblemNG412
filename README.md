@@ -42,7 +42,7 @@ I expect as Angular 4.1.0 inits this App it will try first:
   * Provide Services from Imported Core Module
   * Setup Test App Module
     * Test App Module init imported Modules
-        * executes Initialized from Feature module and since provider for Router has been already defined in AppModule 
+        * executes Initializer from Feature module and since provider for Router has been already defined in AppModule 
         I can inject Router into RoutingService
 
 
