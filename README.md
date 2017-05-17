@@ -30,6 +30,10 @@ When I inject  `RoutingService` into my AppComponent from AppModule, then it wor
      
 
 
+I checked the `Injector` inside the `initMyFeature` factory method and it does not have any provider called Router when I check the same 
+in the App component it has provider. This initializer must has been called even before Router setup.
+
+
  
 ```
 ERROR TypeError: Cannot read property 'routerState' of undefined
