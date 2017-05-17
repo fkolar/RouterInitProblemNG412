@@ -34,6 +34,19 @@ I checked the `Injector` inside the `initMyFeature` factory method and it does n
 in the App component it has provider. This initializer must has been called even before Router setup.
 
 
+**Expected Behavior***
+
+I expect as Angular 4.1.0 inits this App it will try first:
+* Load AppModule and its imports
+  * setup Router
+  * Provide Services from Imported Core Module
+  * Setup Test App Module
+    * Test App Module init imported Modules
+        * executes Initialized from Feature module and since provider for Router has been already defined in AppModule 
+        I can inject Router into RoutingService
+
+
+
  
 ```
 ERROR TypeError: Cannot read property 'routerState' of undefined
