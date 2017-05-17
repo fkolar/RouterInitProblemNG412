@@ -11,7 +11,7 @@ import {MyFeatureModule} from "../feature/my-feature.module";
     TestAppRoutingModule,
 
     MyCoreModule,
-    MyFeatureModule
+    MyFeatureModule // Import Feature as I want to use one component from here
   ],
   declarations: [TestPageComponent]
 })

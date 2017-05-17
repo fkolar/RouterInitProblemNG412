@@ -7,7 +7,7 @@ import {MyCoreModule} from "../core/my-core.module";
 @NgModule({
   imports: [
     CommonModule,
-    MyCoreModule
+    MyCoreModule // Import core since we want to access to RoutingSercice
   ],
   declarations: [YoyoComponent],
 

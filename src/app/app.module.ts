@@ -17,8 +17,8 @@ import {TestAppModule} from "./test/test-app.module";
     FormsModule,
     HttpModule,
     AppRoutingModule,
-    TestAppModule,
-    MyCoreModule
+    TestAppModule, // import actuall app
+    MyCoreModule // import core as we are injecting RoutingService into AppComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
