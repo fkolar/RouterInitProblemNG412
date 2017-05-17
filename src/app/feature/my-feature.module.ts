@@ -2,10 +2,12 @@ import {NgModule, Injector, APP_INITIALIZER} from "@angular/core";
 import {CommonModule} from "@angular/common";
 import {RoutingService} from "../core/routing-service.service";
 import { YoyoComponent } from './yoyo.component';
+import {MyCoreModule} from "../core/my-core.module";
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    MyCoreModule
   ],
   declarations: [YoyoComponent],
 
